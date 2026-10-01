@@ -1,0 +1,97 @@
+/* ------------------------------------------------------------------ */
+/*  Werewolf GUI - оформление                                          */
+/*                                                                     */
+/*  Иконка формы рисуется средствами PIXI (см. scripts/form-badge.js),  */
+/*  поэтому CSS здесь нужен только для мелких правок интерфейса        */
+/*  настроек и для аккуратного отображения диапазонов.                 */
+/* ------------------------------------------------------------------ */
+
+/* Ползунки настроек (размер плашки, прозрачность). */
+.werewolf-gui-range {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.werewolf-gui-range .range-value {
+  min-width: 3ch;
+  text-align: right;
+  opacity: 0.8;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Панель быстрого переключения форм (ApplicationV2)                  */
+/* ------------------------------------------------------------------ */
+
+.wg-form-bar .window-content {
+  padding: 6px;
+  overflow: visible;
+}
+
+.wg-form-bar .wg-form-bar-body {
+  display: flex;
+  justify-content: center;
+}
+
+.wg-form-bar .wg-forms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
+
+.wg-form-bar .wg-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 4px;
+  margin: 0;
+  min-width: 46px;
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: border-color 120ms ease, background 120ms ease;
+}
+
+.wg-form-bar .wg-form:hover {
+  border-color: var(--color-border-highlight, #ff6400);
+  background: rgba(255, 100, 0, 0.1);
+}
+
+.wg-form-bar .wg-form.is-active {
+  border-color: var(--color-border-highlight, #ff6400);
+  background: rgba(255, 100, 0, 0.2);
+  box-shadow: 0 0 6px rgba(255, 100, 0, 0.55);
+}
+
+.wg-form-bar .wg-form:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.wg-form-bar .wg-form.busy {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.wg-form-bar .wg-form-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.wg-form-bar .wg-form-label {
+  max-width: 60px;
+  font-size: 10px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+

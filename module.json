@@ -1,0 +1,54 @@
+{
+  "id": "werewolf-gui",
+  "title": "Werewolf GUI",
+  "description": "<p>Shows the current shapeshifting form of Werewolf (and other shifter) characters right on the canvas.</p><ul><li><strong>Form badge under the token</strong> &mdash; a small plate below the token displays the active form icon (Homid / Glabro / Crinos / Hispo / Lupus).</li><li><strong>Form bar</strong> &mdash; a small, movable panel with one-click form switching, so players do not have to open the character sheet. Its position is remembered per user.</li><li>Works with the legacy Werewolf / Changing Breed sheets <em>and</em> with the new PC Actor sheet (Shapeshifting Form Trait items).</li><li>Keeps the base actor and its unlinked tokens in sync, so a form change updates the sheet, the token and every scene.</li><li>Icons are taken from the World of Darkness system assets &mdash; no artwork is duplicated by this module.</li></ul><p>Requires the <em>World of Darkness 20th edition</em> system.</p>",
+  "version": "1.1.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "Zmeugat",
+      "url": "https://github.com/ZmeugatGPT"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/werewolf-gui.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "worldofdarkness",
+        "type": "system",
+        "compatibility": {
+          "minimum": "7.3.0",
+          "verified": "7.3.1"
+        }
+      }
+    ]
+  },
+  "url": "https://github.com/ZmeugatGPT/werewolf-gui",
+  "manifest": "https://github.com/ZmeugatGPT/werewolf-gui/releases/latest/download/module.json",
+  "download": "https://github.com/ZmeugatGPT/werewolf-gui/releases/latest/download/werewolf-gui.zip",
+  "changelog": "https://github.com/ZmeugatGPT/werewolf-gui/blob/main/CHANGELOG.md",
+  "bugs": "https://github.com/ZmeugatGPT/werewolf-gui/issues",
+  "readme": "https://github.com/ZmeugatGPT/werewolf-gui/blob/main/README.md",
+  "license": "LICENSE",
+  "flags": {}
+}

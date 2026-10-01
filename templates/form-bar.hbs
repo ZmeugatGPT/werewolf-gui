@@ -1,0 +1,17 @@
+<div class="wg-form-bar-body">
+    <div class="wg-forms" role="group" aria-label="{{localize 'werewolf-gui.formBar.title'}}">
+        {{#each forms as |form|}}
+            <button type="button"
+                    class="wg-form{{#if form.active}} is-active{{/if}}"
+                    data-action="setForm"
+                    data-form="{{form.key}}"
+                    aria-pressed="{{#if form.active}}true{{else}}false{{/if}}"
+                    aria-label="{{form.label}}"
+                    data-tooltip="{{form.label}}"
+                    {{#if ../locked}}disabled{{/if}}>
+                <img class="wg-form-icon" src="{{form.icon}}" alt="" draggable="false" />
+                {{#if ../showLabels}}<span class="wg-form-label">{{form.label}}</span>{{/if}}
+            </button>
+        {{/each}}
+    </div>
+</div>

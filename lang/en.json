@@ -1,0 +1,71 @@
+{
+  "werewolf-gui": {
+    "settings": {
+      "enabled": {
+        "name": "Enable form badge",
+        "hint": "Show an icon of the active shapeshifting form underneath werewolf tokens."
+      },
+      "hideSystemIcon": {
+        "name": "Hide built-in status icon",
+        "hint": "Hide the status-effect icon that the World of Darkness system draws on the token, so it does not duplicate the badge."
+      },
+      "showLabel": {
+        "name": "Show form name",
+        "hint": "Display the localized form name next to the icon (e.g. Crinos)."
+      },
+      "hideHomid": {
+        "name": "Hide in breed form",
+        "hint": "Do not show the badge while the actor is in its human (Homid) form."
+      },
+      "syncUnlinkedTokens": {
+        "name": "Sync form to unlinked tokens",
+        "hint": "Keeps the base actor and its unlinked tokens in sync: a form changed on the base actor (Actors sidebar sheet) is applied to the tokens, and a form changed on a token is mirrored back to the base actor."
+      },
+      "showOnlyObservable": {
+        "name": "Only show on accessible actors",
+        "hint": "Show the badge only on tokens whose actor this user has at least Limited permission for. Turn off to show the form on every visible token (players included)."
+      },
+      "formBarEnabled": {
+        "name": "Show form bar",
+        "hint": "Show a small movable panel with buttons to switch the shapeshifting form. Toggle it with the G key."
+      },
+      "formBarShowLabels": {
+        "name": "Show form names on the bar",
+        "hint": "Display the localized form name under each button icon."
+      },
+      "badgeSize": {
+        "name": "Badge size",
+        "hint": "Badge icon size as a fraction of the token width."
+      },
+      "opacity": {
+        "name": "Background opacity",
+        "hint": "Opacity of the badge background plate."
+      },
+      "position": {
+        "name": "Badge position",
+        "hint": "Where the badge is placed relative to the token.",
+        "choices": {
+          "bottomCenter": "Below, centered",
+          "bottomRight": "Below, right",
+          "bottomLeft": "Below, left",
+          "topCenter": "Above, centered"
+        }
+      }
+    },
+    "notifications": {
+      "gmOnly": "Only the GM can change the actor link of tokens.",
+      "linked": "Linked tokens updated: {count}.",
+      "noPermission": "You do not have permission to change this actor's form.",
+      "switchFailed": "Failed to switch the form. See the console for details."
+    },
+    "formBar": {
+      "title": "Shapeshifting"
+    },
+    "keybindings": {
+      "toggleFormBar": {
+        "name": "Toggle the shapeshifting form bar",
+        "hint": "Shows or hides the quick form-switching panel."
+      }
+    }
+  }
+}

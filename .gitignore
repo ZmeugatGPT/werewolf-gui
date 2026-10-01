@@ -1,0 +1,14 @@
+# Build output
+/dist/
+*.zip
+
+# OS / editors
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.log
+npm-debug.log*
+node_modules/
